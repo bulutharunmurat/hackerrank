@@ -18,7 +18,10 @@ def isBalanced(s):
         return "YES"
     else:
         return "NO"
+
 print(isBalanced("}][}}(}][))]"))
 print(isBalanced("[](){()}"))
 print(isBalanced("()"))
 print(isBalanced("({}([][]))[]()"))
+
+#SCORE = 100

@@ -12,10 +12,10 @@ def countTriplets(lst, ratio):
     v2 = defaultdict(int)
     v3 = defaultdict(int)
     count = 0
-    for element in lst:
-        count += v3[element]
-        v3[element * ratio] += v2[element]
-        v2[element * ratio] += 1
+    for k in lst:
+        count += v3[k]
+        v3[k * ratio] += v2[k]
+        v2[k * ratio] += 1
 
     return count
 
@@ -23,4 +23,6 @@ def countTriplets(lst, ratio):
 print(countTriplets(arr, r))
 print(countTriplets(arr2, r2))
 print(countTriplets(arr3, r3))
+
+#SCORE = 100
 
