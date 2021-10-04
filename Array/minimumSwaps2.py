@@ -1,5 +1,6 @@
 def minimumSwaps(arr):
     # 1 3 5 2 4 6 7
+    # [7, 1, 3, 2, 4, 5, 6]
     '''
     count = 0
     for i in range(len(arr)):
@@ -21,4 +22,6 @@ def minimumSwaps(arr):
             count += 1
     return count
 
+
+print(minimumSwaps([7, 1, 3, 2, 4, 5, 6]))
 #SCORE = 100
